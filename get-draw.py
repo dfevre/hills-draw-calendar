@@ -2,7 +2,7 @@ from calendar import calendar
 from time import sleep
 from urllib import response
 import requests
-from icalendar import Calendar, Event
+from icalendar import Calendar, Event, vDatetime
 from datetime import datetime, timedelta, timezone
 import pytz
 import boto3
@@ -58,8 +58,10 @@ def draw_entry_to_event(draw_entry, season_id, division_id, team_id):
         f"{draw_entry['date_time_from']}", '%Y%m%dT%H%M%S')
     end_time = datetime.strptime(
         f"{draw_entry['date_time_to']}", '%Y%m%dT%H%M%S')
-    event.add('dtstart', start_time)
-    event.add('dtend', end_time)
+    mytz = pytz.timezone('Australia/Sydney')
+    event.add('dtstart', vDatetime(
+        mytz.localize(start_time).astimezone(pytz.UTC)))
+    event.add('dtend', vDatetime(mytz.localize(end_time).astimezone(pytz.UTC)))
     event.add('dtstamp', datetime.now(timezone.utc))
     event.add('location', draw_entry['venueLabel'])
     event['uid'] = f"{season_id}-{division_id}-{team_id}-{draw_entry['game']}@hills.fevre.io"
