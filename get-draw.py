@@ -1,9 +1,8 @@
 from calendar import calendar
 from time import sleep
-from urllib import response
 import requests
 from icalendar import Calendar, Event, vDatetime
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 import pytz
 import boto3
 import urllib.parse
@@ -40,12 +39,15 @@ def main():
         's3',
         region_name='ap-southeast-2'
     )
+    calendar_count = 0
     for calendar_key in calendars.keys():
         calendar_file_name = f'cals/{urllib.parse.quote_plus(calendar_key)}.ics'
         calendar_content = calendars[calendar_key].to_ical()
         print(f'Uploading calendar {calendar_file_name} to S3')
         s3.Object('fevre.io', calendar_file_name).put(
             Body=calendar_content, ContentType='text/calendar')
+        calendar_count += 1
+    print(f'Done. Uploaded {calendar_count} calendars')
 
 
 def draw_entry_to_event(draw_entry, season_id, division_id, team_id):
