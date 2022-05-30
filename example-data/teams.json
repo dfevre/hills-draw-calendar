@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "team_name": "Space Marines"
+        },
+        {
+            "team_name": "Wild Hogs"
+        },
+        {
+            "team_name": "The Goodies"
+        },
+        {
+            "team_name": "Old Timers"
+        },
+        {
+            "team_name": "Q First HSB"
+        },
+        {
+            "team_name": "Basket Cases"
+        },
+        {
+            "team_name": "Not Fast Just Furious"
+        },
+        {
+            "team_name": "Game Of Zones"
+        },
+        {
+            "team_name": "Oakhill Spartans"
+        }
+    ],
+    "status": 200
+}

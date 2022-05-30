@@ -1,0 +1,695 @@
+{
+    "data": [
+        {
+            "division_id": 4610,
+            "division_name": "Masters Men A Tuesday \/ Wednesday (Born 1982 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4611,
+            "division_name": "Masters Men B Tuesday \/ Wednesday (Born 1982 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4596,
+            "division_name": "Senior Men A1 Monday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4679,
+            "division_name": "Senior Men A2 Monday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4600,
+            "division_name": "Senior Men A Thursday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4597,
+            "division_name": "Senior Men B1 Monday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4601,
+            "division_name": "Senior Men B1 Thursday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4680,
+            "division_name": "Senior Men B2 Monday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4664,
+            "division_name": "Senior Men B2 Thursday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4598,
+            "division_name": "Senior Men C1 Monday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4602,
+            "division_name": "Senior Men C1 Thursday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4681,
+            "division_name": "Senior Men C2 Monday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4665,
+            "division_name": "Senior Men C2 Thursday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4682,
+            "division_name": "Senior Men C3 Monday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4666,
+            "division_name": "Senior Men C3 Thursday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4667,
+            "division_name": "Senior Men C4 Thursday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4604,
+            "division_name": "Senior Men C Sunday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4599,
+            "division_name": "Senior Men D1 Monday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4603,
+            "division_name": "Senior Men D1 Thursday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4683,
+            "division_name": "Senior Men D2 Monday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4668,
+            "division_name": "Senior Men D2 Thursday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4684,
+            "division_name": "Senior Men D3 Monday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4673,
+            "division_name": "Senior Men D3 Thursday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4685,
+            "division_name": "Senior Men D4 Monday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4686,
+            "division_name": "Senior Men D5 Monday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4605,
+            "division_name": "Senior Men D Sunday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4592,
+            "division_name": "Senior Women A\/B Tuesday (Born 2006 or earlier)",
+            "division_note": "Revised draw issued 22\/04\/2022"
+        },
+        {
+            "division_id": 4594,
+            "division_name": "Senior Women C1 Tuesday (Born 2006 or earlier)",
+            "division_note": "Revised draw issued 26\/04\/2022"
+        },
+        {
+            "division_id": 4593,
+            "division_name": "Senior Women C2 Tuesday (Born 2006 or earlier)",
+            "division_note": "Revised draw issued 26\/04\/2022"
+        },
+        {
+            "division_id": 4595,
+            "division_name": "Senior Women D1 Tuesday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4633,
+            "division_name": "Senior Women D2 Tuesday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4542,
+            "division_name": "U09 Boys Green Saturday (Born 2014 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4649,
+            "division_name": "U09 Boys White Saturday (Born 2014 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4543,
+            "division_name": "U09 Girls Saturday (Born 2014 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4545,
+            "division_name": "U10 Boys Green Saturday (Born 2013 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4651,
+            "division_name": "U10 Boys Red Saturday (Born 2013 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4650,
+            "division_name": "U10 Boys White Saturday (Born 2013 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4544,
+            "division_name": "U10 Girls Saturday (Born 2013 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4546,
+            "division_name": "U11 Boys A Saturday (Born 2012 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4547,
+            "division_name": "U11 Boys B Saturday (Born 2012 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4548,
+            "division_name": "U11 Boys C1 Saturday (Born 2012 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4652,
+            "division_name": "U11 Boys C2 Saturday (Born 2012 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4653,
+            "division_name": "U11 Boys C3 Saturday (Born 2012 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4654,
+            "division_name": "U11 Boys C4 Saturday (Born 2012 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4549,
+            "division_name": "U11 Girls A Saturday (Born 2012 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4550,
+            "division_name": "U11 Girls B Saturday (Born 2012 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4551,
+            "division_name": "U12 Boys A Saturday (Born 2011 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4552,
+            "division_name": "U12 Boys B1 Saturday (Born 2011 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4655,
+            "division_name": "U12 Boys B2 Saturday (Born 2011 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4553,
+            "division_name": "U12 Boys C1 Saturday (Born 2011 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4656,
+            "division_name": "U12 Boys C2 Saturday (Born 2011 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4657,
+            "division_name": "U12 Boys C3 Saturday (Born 2011 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4658,
+            "division_name": "U12 Boys C4 Saturday (Born 2011 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4674,
+            "division_name": "U12 Boys C5 Saturday (Born 2011 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4554,
+            "division_name": "U12 Girls A Saturday (Born 2011 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4555,
+            "division_name": "U12 Girls B Saturday (Born 2011 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4558,
+            "division_name": "U13 Boys A Monday (Born 2010 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4559,
+            "division_name": "U13 Boys B Monday (Born 2010 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4560,
+            "division_name": "U13 Boys C1 Monday (Born 2010 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4617,
+            "division_name": "U13 Boys C2 Monday (Born 2010 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4618,
+            "division_name": "U13 Boys C3 Monday (Born 2010 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4619,
+            "division_name": "U13 Boys C4 Monday (Born 2010 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4620,
+            "division_name": "U13 Boys C5 Monday (Born 2010 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4556,
+            "division_name": "U13 Girls A Tuesday (Born 2010 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4557,
+            "division_name": "U13 Girls B Tuesday (Born 2010 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4563,
+            "division_name": "U14 Boys A Tuesday (Born 2009 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4564,
+            "division_name": "U14 Boys B1 Tuesday (Born 2009 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4628,
+            "division_name": "U14 Boys B2 Tuesday (Born 2009 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4565,
+            "division_name": "U14 Boys C1 Tuesday (Born 2009 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4629,
+            "division_name": "U14 Boys C2 Tuesday (Born 2009 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4630,
+            "division_name": "U14 Boys C3 Tuesday (Born 2009 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4631,
+            "division_name": "U14 Boys C4 Tuesday (Born 2009 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4632,
+            "division_name": "U14 Boys C5 Tuesday (Born 2009 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4561,
+            "division_name": "U14 Girls A Tuesday (Born 2009 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4562,
+            "division_name": "U14 Girls B Tuesday (Born 2009 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4627,
+            "division_name": "U14 Girls C Tuesday (Born 2009 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4568,
+            "division_name": "U15 Boys A Monday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4569,
+            "division_name": "U15 Boys B Monday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4570,
+            "division_name": "U15 Boys C1 Monday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4621,
+            "division_name": "U15 Boys C2 Monday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4622,
+            "division_name": "U15 Boys C3 Monday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4623,
+            "division_name": "U15 Boys C4 Monday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4624,
+            "division_name": "U15 Boys C5 Monday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4625,
+            "division_name": "U15 Boys C6 Monday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4626,
+            "division_name": "U15 Boys C7 Monday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4566,
+            "division_name": "U15 Girls A Thursday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4567,
+            "division_name": "U15 Girls B1 Thursday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4645,
+            "division_name": "U15 Girls B2 Thursday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4646,
+            "division_name": "U15 Girls C Thursday (Born 2008 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4571,
+            "division_name": "U16 Boys A Wednesday (Born 2007 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4572,
+            "division_name": "U16 Boys B1 Wednesday (Born 2007 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4634,
+            "division_name": "U16 Boys B2 Wednesday (Born 2007 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4635,
+            "division_name": "U16 Boys B3 Wednesday (Born 2007 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4573,
+            "division_name": "U16 Boys C1 Wednesday (Born 2007 or later)",
+            "division_note": "Revised draw issued 22\/04\/2022"
+        },
+        {
+            "division_id": 4636,
+            "division_name": "U16 Boys C2 Wednesday (Born 2007 or later)",
+            "division_note": "Revised draw issued 22\/04\/2022"
+        },
+        {
+            "division_id": 4637,
+            "division_name": "U16 Boys C3 Wednesday (Born 2007 or later)",
+            "division_note": "Revised draw issued 22\/04\/2022"
+        },
+        {
+            "division_id": 4638,
+            "division_name": "U16 Boys C4 Wednesday (Born 2007 or later)",
+            "division_note": "Revised draw issued 22\/04\/2022"
+        },
+        {
+            "division_id": 4639,
+            "division_name": "U16 Boys C5 Wednesday (Born 2007 or later)",
+            "division_note": "Revised draw issued 22\/04\/2022"
+        },
+        {
+            "division_id": 4640,
+            "division_name": "U16 Boys C6 Wednesday (Born 2007 or later)",
+            "division_note": "Revised draw issued 22\/04\/2022"
+        },
+        {
+            "division_id": 4641,
+            "division_name": "U16 Boys C7 Wednesday (Born 2007 or later)",
+            "division_note": "Revised draw issued 22\/04\/2022"
+        },
+        {
+            "division_id": 4574,
+            "division_name": "U16 Girls A Thursday (Born 2007 or later)",
+            "division_note": "Revised draw issued 26\/04\/2022"
+        },
+        {
+            "division_id": 4575,
+            "division_name": "U16 Girls B Thursday (Born 2007 or later)",
+            "division_note": "Revised draw issued 26\/04\/2022"
+        },
+        {
+            "division_id": 4647,
+            "division_name": "U16 Girls C1 Thursday (Born 2007 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4648,
+            "division_name": "U16 Girls C2 Thursday (Born 2007 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4578,
+            "division_name": "U17 Boys A Friday (Born 2006 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4579,
+            "division_name": "U17 Boys B Friday (Born 2006 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4580,
+            "division_name": "U17 Boys C1 Friday (Born 2006 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4659,
+            "division_name": "U17 Boys C2 Friday (Born 2006 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4660,
+            "division_name": "U17 Boys C3 Friday (Born 2006 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4661,
+            "division_name": "U17 Boys C4 Friday (Born 2006 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4671,
+            "division_name": "U17 Boys C5 Friday (Born 2006 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4576,
+            "division_name": "U17 Girls A Friday (Born 2006 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4577,
+            "division_name": "U17 Girls B Friday (Born 2006 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4583,
+            "division_name": "U18 Boys A Friday (Born 2005 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4584,
+            "division_name": "U18 Boys B Friday (Born 2005 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4585,
+            "division_name": "U18 Boys C1 Friday (Born 2005 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4662,
+            "division_name": "U18 Boys C2 Friday (Born 2005 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4663,
+            "division_name": "U18 Boys C3 Friday (Born 2005 or later)",
+            "division_note": "Redraw issued 10\/05\/2022 - team withdrew from competition."
+        },
+        {
+            "division_id": 4669,
+            "division_name": "U18 Boys C4 Friday (Born 2005 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4670,
+            "division_name": "U18 Boys C5 Friday (Born 2005 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4581,
+            "division_name": "U18 Girls A\/B Friday (Born 2005 or later)",
+            "division_note": null
+        },
+        {
+            "division_id": 4588,
+            "division_name": "U22 Men A\/B Wednesday (Born 2001-2006 incl.)",
+            "division_note": null
+        },
+        {
+            "division_id": 4589,
+            "division_name": "U22 Men B2 Wednesday (Born 2001-2006 incl.)",
+            "division_note": null
+        },
+        {
+            "division_id": 4590,
+            "division_name": "U22 Men C1 Wednesday (Born 2001-2006 incl.)",
+            "division_note": null
+        },
+        {
+            "division_id": 4642,
+            "division_name": "U22 Men C2 Wednesday (Born 2001-2006 incl.)",
+            "division_note": null
+        },
+        {
+            "division_id": 4643,
+            "division_name": "U22 Men C3 Wednesday (Born 2001-2006 incl.)",
+            "division_note": null
+        },
+        {
+            "division_id": 4591,
+            "division_name": "U22 Men D1 Wednesday (Born 2001-2006 incl.)",
+            "division_note": null
+        },
+        {
+            "division_id": 4644,
+            "division_name": "U22 Men D2 Wednesday (Born 2001-2006 incl.)",
+            "division_note": null
+        },
+        {
+            "division_id": 4586,
+            "division_name": "U22 Women A Thursday (Born 2001-2006 incl.)",
+            "division_note": "Redraw issued 27\/04\/2022 - team withdrew from comp"
+        },
+        {
+            "division_id": 4587,
+            "division_name": "U22 Women B Thursday (Born 2001-2006 incl.)",
+            "division_note": null
+        },
+        {
+            "division_id": 4606,
+            "division_name": "Unisex A\/B Sunday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4608,
+            "division_name": "Unisex C Sunday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4607,
+            "division_name": "Unisex D1 Sunday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4609,
+            "division_name": "Unisex D2 Sunday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4675,
+            "division_name": "Unisex D3 Sunday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4676,
+            "division_name": "Unisex D4 Sunday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4677,
+            "division_name": "Unisex D5 Sunday (Born 2006 or earlier)",
+            "division_note": null
+        },
+        {
+            "division_id": 4678,
+            "division_name": "Unisex D6 Sunday (Born 2006 or earlier)",
+            "division_note": null
+        }
+    ],
+    "status": 200
+}

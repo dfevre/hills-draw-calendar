@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "season_id": 98,
+            "season_name": "Winter 2022"
+        },
+        {
+            "season_id": 97,
+            "season_name": "Representative 2022"
+        }
+    ],
+    "status": 200
+}
