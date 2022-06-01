@@ -30,7 +30,7 @@ def main():
                     # Each game will be an entry in 2 calendars since each team gets its own calendar
                     for team_id in [game['team_a_id'], game['team_b_id']]:
                         event = draw_entry_to_event(
-                            game, season['season_id'], division['division_id'], team_id)
+                            game, season, division, team_id)
                         calendar = get_calendar(
                             f"{season['season_id']}-{division['division_id']}-{team_id}")
                         calendar.add_component(event)
@@ -50,11 +50,16 @@ def main():
     print(f'Done. Uploaded {calendar_count} calendars')
 
 
-def draw_entry_to_event(draw_entry, season_id, division_id, team_id):
+def draw_entry_to_event(draw_entry, season, division, team_id):
     us = team_id
     them = draw_entry['team_a_id'] if draw_entry['team_a_id'] != us else draw_entry['team_b_id']
     event = Event()
-    event.add('summary', f'🏀 {us} vs {them}')
+    summary = '🏀 '  # Always start with a 🏀
+    if len(division['division_name']) > 0 and division['division_name'][0] == 'U':
+        # This division starts with an age group. E.G. 'U16'
+        summary += division['division_name'][0:3] + ' '
+    summary += f'{us} vs {them}'
+    event.add('summary', summary)
     event.add('description', draw_entry['court'])
     start_time = datetime.strptime(
         f"{draw_entry['date_time_from']}", '%Y%m%dT%H%M%S')
@@ -66,7 +71,7 @@ def draw_entry_to_event(draw_entry, season_id, division_id, team_id):
     event.add('dtend', vDatetime(mytz.localize(end_time).astimezone(pytz.UTC)))
     event.add('dtstamp', datetime.now(timezone.utc))
     event.add('location', draw_entry['venueLabel'])
-    event['uid'] = f"{season_id}-{division_id}-{team_id}-{draw_entry['game']}@hills.fevre.io"
+    event['uid'] = f"{season['season_id']}-{division['division_id']}-{team_id}-{draw_entry['game']}@hills.fevre.io"
     return event
 
 
