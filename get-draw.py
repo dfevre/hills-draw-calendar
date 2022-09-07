@@ -97,7 +97,7 @@ def get_games_from_draw(draw_data):
 
     # Each other 'schedule' in 'divisionDraw' is an object with the game number
     # as a key (string) rather than an index (int)
-    for i in range(0, len(draw_data['data']['divisionDraw']) - 1):
+    for i in range(0, len(draw_data['data']['divisionDraw'])):
         if i == 0:
             for game in draw_data['data']['divisionDraw'][i]['schedule']:
                 games.append(game)
