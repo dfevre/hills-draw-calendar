@@ -24,9 +24,15 @@ def main():
             sleep(1)  # go easy on the API
             draw_data = call_api(
                 f"https://hillshornets.com.au/members/api/draw/seasons/divisions/{division['division_id']}/draw")
-            games = get_games_from_draw(draw_data)
+            games = get_games_from_draw(draw_data['data']['divisionDraw'])
+            if 'Semi_Final' in draw_data['data']['finalSeries']:
+                games += get_games_from_draw(draw_data['data']
+                                             ['finalSeries']['Semi_Final'])
+            if 'Grand_Final' in draw_data['data']['finalSeries']:
+                games += get_games_from_draw(draw_data['data']
+                                             ['finalSeries']['Grand_Final'])
             for game in games:
-                if game['match'] != "No Match":
+                if game['match'] != "No Match" and game['team_a_id'] is not None and game['team_a_id'] is not None:
                     # Each game will be an entry in 2 calendars since each team gets its own calendar
                     for team_id in [game['team_a_id'], game['team_b_id']]:
                         event = draw_entry_to_event(
@@ -60,7 +66,10 @@ def draw_entry_to_event(draw_entry, season, division, team_id):
         summary += division['division_name'][0:3] + ' '
     summary += f'{us} vs {them}'
     event.add('summary', summary)
-    event.add('description', draw_entry['court'])
+    description = draw_entry['court']
+    if draw_entry['double_points'] == 'Yes':
+        description += '\nDouble points round!'
+    event.add('description', description)
     start_time = datetime.strptime(
         f"{draw_entry['date_time_from']}", '%Y%m%dT%H%M%S')
     end_time = datetime.strptime(
@@ -97,14 +106,13 @@ def get_games_from_draw(draw_data):
 
     # Each other 'schedule' in 'divisionDraw' is an object with the game number
     # as a key (string) rather than an index (int)
-    for i in range(0, len(draw_data['data']['divisionDraw'])):
+    for i in range(0, len(draw_data)):
         if i == 0:
-            for game in draw_data['data']['divisionDraw'][i]['schedule']:
+            for game in draw_data[i]['schedule']:
                 games.append(game)
         else:
-            for schedule_key in draw_data['data']['divisionDraw'][i]['schedule'].keys():
-                games.append(draw_data['data']['divisionDraw']
-                             [i]['schedule'][schedule_key])
+            for schedule_key in draw_data[i]['schedule'].keys():
+                games.append(draw_data[i]['schedule'][schedule_key])
     return games
 
 
