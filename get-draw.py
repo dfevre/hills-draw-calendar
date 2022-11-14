@@ -61,12 +61,9 @@ def draw_entry_to_event(draw_entry, season, division, team_id):
     them = draw_entry['team_a_id'] if draw_entry['team_a_id'] != us else draw_entry['team_b_id']
     event = Event()
     summary = '🏀 '  # Always start with a 🏀
-    if len(division['division_name']) > 0 and division['division_name'][0] == 'U':
-        # This division starts with an age group. E.G. 'U16'
-        summary += division['division_name'][0:3] + ' '
     summary += f'{us} vs {them}'
     event.add('summary', summary)
-    description = draw_entry['court']
+    description = f"{draw_entry['court']}\n{division['division_name']}"
     if draw_entry['double_points'] == 'Yes':
         description += '\nDouble points round!'
     event.add('description', description)
