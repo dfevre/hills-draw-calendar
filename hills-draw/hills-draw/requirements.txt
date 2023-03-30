@@ -1,0 +1,5 @@
+requests
+icalendar
+datetime
+pytz
+boto3
