@@ -31,11 +31,12 @@ def lambda_handler(event, context):
                 if game['match'] != "No Match" and game['team_a_id'] is not None and game['team_a_id'] is not None:
                     # Each game will be an entry in 2 calendars since each team gets its own calendar
                     for team_id in [game['team_a_id'], game['team_b_id']]:
-                        event = draw_entry_to_event(
+                        cal_event = None
+                        cal_event = draw_entry_to_event(
                             game, season, division, team_id)
                         calendar = get_calendar(
                             f"{season['season_id']}-{division['division_id']}-{team_id}")
-                        calendar.add_component(event)
+                        calendar.add_component(cal_event)
     # Print all calendars
     s3 = boto3.resource(
         's3',
@@ -122,3 +123,14 @@ def call_api(url: str):
         else:
             raise Exception(
                 f"Got response {response.status_code} from {url}\n Headers {response.headers}")
+
+if __name__ == "__main__":
+    # Example of a test event that simulates an AWS Lambda event
+    sample_event = {
+        # Add any event data your function expects (can leave as empty dict if not used)
+    }
+    # Simulate the AWS Lambda context (can leave as None if not needed)
+    sample_context = None
+
+    # Call the lambda_handler function
+    lambda_handler(sample_event, sample_context)
