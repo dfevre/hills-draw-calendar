@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 import pytz
 import boto3
 import urllib.parse
+import json
 
 calendars = {}
 
@@ -12,14 +13,21 @@ calendars = {}
 def lambda_handler(event, context):
     seasons_data = call_api(
         'https://hillshornets.com.au/members/api/draw/seasons')
+    upload_to_s3('data/seasons', json.dumps(seasons_data), 'application/json')
     for season in seasons_data["data"]:
         divisions_data = call_api(
             f"https://hillshornets.com.au/members/api/draw/seasons/{season['season_id']}/divisions")
+        upload_to_s3(f"data/season/{season['season_id']}/divisions", json.dumps(divisions_data), 'application/json')
         # Each season + division + team will become a calendar
         for division in divisions_data['data']:
+            teams_data = call_api(
+                f"https://hillshornets.com.au/members/api/draw/seasons/divisions/{division['division_id']}/teams"
+            )
+            upload_to_s3(f"data/season/{season['season_id']}/division/{division['division_id']}/teams", json.dumps(teams_data), 'application/json')
             sleep(1)  # go easy on the API
             draw_data = call_api(
                 f"https://hillshornets.com.au/members/api/draw/seasons/divisions/{division['division_id']}/draw")
+            sleep(1)  # go easy on the API
             games = get_games_from_draw(draw_data['data']['divisionDraw'])
             if 'Semi_Final' in draw_data['data']['finalSeries']:
                 games += get_games_from_draw(draw_data['data']
@@ -38,20 +46,20 @@ def lambda_handler(event, context):
                             f"{season['season_id']}-{division['division_id']}-{team_id}")
                         calendar.add_component(cal_event)
     # Print all calendars
+    calendar_count = 0
+    for calendar_key in calendars.keys():
+        upload_to_s3(f'cals/{urllib.parse.quote_plus(calendar_key)}.ics', calendars[calendar_key].to_ical(), 'text/calendar')
+        calendar_count += 1
+    print(f'Done. Uploaded {calendar_count} calendars')
+
+def upload_to_s3(file_name, file_content, content_type):
     s3 = boto3.resource(
         's3',
         region_name='ap-southeast-2'
     )
-    calendar_count = 0
-    for calendar_key in calendars.keys():
-        calendar_file_name = f'cals/{urllib.parse.quote_plus(calendar_key)}.ics'
-        calendar_content = calendars[calendar_key].to_ical()
-        print(f'Uploading calendar {calendar_file_name} to S3')
-        s3.Object('fevre.io', calendar_file_name).put(
-            Body=calendar_content, ContentType='text/calendar')
-        calendar_count += 1
-    print(f'Done. Uploaded {calendar_count} calendars')
-
+    print(f'Uploading file {file_name} to S3')
+    s3.Object('fevre.io', file_name).put(
+        Body=file_content, ContentType=content_type)
 
 def draw_entry_to_event(draw_entry, season, division, team_id):
     us = team_id
