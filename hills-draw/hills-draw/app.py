@@ -48,7 +48,9 @@ def lambda_handler(event, context):
     # Print all calendars
     calendar_count = 0
     for calendar_key in calendars.keys():
-        upload_to_s3(f'cals/{urllib.parse.quote_plus(calendar_key)}.ics', calendars[calendar_key].to_ical(), 'text/calendar')
+        upload_to_s3(f'cals/{urllib.parse.quote_plus(calendar_key)}.ics', 
+                     calendars[calendar_key].to_ical(), 
+                     'text/calendar; charset=utf-8')
         calendar_count += 1
     print(f'Done. Uploaded {calendar_count} calendars')
 

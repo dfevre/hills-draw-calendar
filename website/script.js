@@ -80,26 +80,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("generate-url").addEventListener("click", () => {
         const season = seasonDropdown.value;
         const division = divisionDropdown.value;
-        const teamOption = teamDropdown.options[teamDropdown.selectedIndex]; // Get the selected option
-        let teamName = teamOption ? teamOption.textContent : ""; // Get the team name as a string
+        const teamOption = teamDropdown.options[teamDropdown.selectedIndex];
+        let teamName = teamOption ? teamOption.textContent : "";
 
         if (season && division && teamName) {
-            // Replace spaces with '+' and then URL encode the string
             teamName = encodeURIComponent(teamName.replace(/ /g, "+"));
 
-            // Construct the calendar URL
-            const url = `https://s3.ap-southeast-2.amazonaws.com/fevre.io/cals/${season}-${division}-${teamName}.ics`;
+            // Change http(s) to webcal protocol
+            const url = `webcal://s3.ap-southeast-2.amazonaws.com/fevre.io/cals/${season}-${division}-${teamName}.ics`;
 
-            // Create a temporary anchor element
-            const anchor = document.createElement("a");
-            anchor.href = url;
-            anchor.download = `${season}-${division}-${teamName}.ics`; // Set the file name for the download
-            anchor.style.display = "none"; // Hide the anchor element
-
-            // Append the anchor to the body, trigger the download, and remove it
-            document.body.appendChild(anchor);
-            anchor.click();
-            document.body.removeChild(anchor);
+            // Direct navigation instead of download
+            window.location.href = url;
         } else {
             result.textContent = "Please select all options!";
             result.style.color = "red";
