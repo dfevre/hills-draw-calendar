@@ -16,7 +16,7 @@ Resources:
     Properties:
       CodeUri: ../lambda/
       Handler: app.lambda_handler
-      Runtime: python3.9
+      Runtime: python3.12
       MemorySize: 512
       Architectures:
         - x86_64
