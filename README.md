@@ -12,6 +12,14 @@ The way the Hills Hornets website organises the draw information makes it a hass
 
 ![Calendar](./img/calendar-screenshot.png)
 
+# Repository Structure
+- `lambda/` – AWS Lambda source (`app.py`) and its dependency manifest.
+- `infra/` – SAM template, deployment config, and supporting events/IaC files.
+- `frontend/` – static site that lets players locate their calendars.
+- `scripts/` – local utilities for manual calendar extraction and API pulls.
+- `data/examples/` – captured API responses and sample calendars for reference.
+- `build/` – transient outputs such as SAM build artefacts (`aws-sam/`).
+
 # Hills Website API
 The Hills website populates the draw page by calling the following API endpoints.
 * `https://hillshornets.com.au/members/api/draw/seasons`
